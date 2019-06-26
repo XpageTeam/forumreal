@@ -2,9 +2,220 @@
 @import "_base.sss"
 @import "_vars.sss"
 @import "_text-styles.sss"
+@import "_form-elements.sss"
 @import "_blog.sss"
 
 @import "_slider-main.sss"
+
+.consoltation-form
+	&-cont
+		background: var(--main-color)
+		color: #fff
+		padding: 80px 0 95px
+
+	&__title
+		font-size: rem(30)
+		font-weight: 600
+		margin-bottom: 25px
+
+	&__subtitle
+		font-size: rem(14)
+
+	.form-wrap
+		margin: 45px auto 0
+		display: flex
+		justify-content: space-between
+		max-width: 835px
+
+	.default-input
+		width: calc((100% - 55px * 2) / 2)
+		
+		&:not(:last-child)
+			margin-right: 55px
+
+
+
+
+.best-offer
+
+	&-cont
+		background: #F9F9FA
+		padding: 75px 0
+
+	&__title
+		font-size: rem(30)
+		font-weight: 600
+		margin-bottom: 50px
+		line-height: 1
+
+
+	&__item
+		color: #000
+		text-align: left
+		background: #fff
+
+		&-info
+			padding: 35px 40px
+			border: 1px solid #F1F1F1
+			border-top: 0
+
+		&-title
+			font-size: rem(16)
+			font-weight: 600
+			margin-bottom: 20px
+
+	&__elements
+		margin-top: 25px
+		display: flex
+		flex-wrap: wrap
+		margin-bottom: -20px
+
+	&__btn
+		margin-top: 25px
+
+	&__el
+		width: 50%
+		margin-bottom: 20px
+
+		&-label
+			font-weight: 600
+			color: var(--main-color)
+			margin-bottom: 5px
+
+	.slick
+		&-list
+			margin: 0 -10px
+
+		&-slide
+			margin: 0 10px
+
+
+
+
+.personal-one
+	display: flex
+
+	&__info
+		text-align: left
+
+	&__img
+		margin-right: 70px
+		flex: none
+
+	&__name
+		font-size: rem(30)
+		font-weight: 600
+		margin-bottom: 15px
+
+	&__post
+		font-size: rem(14)
+
+	&__top
+		background: #F9F9FA
+		padding: 37px 53px
+		margin-top: 45px
+		margin-bottom: 50px
+
+
+	&__otdel
+		font-size: rem(16)
+		font-weight: 600
+		margin-bottom: 15px
+
+	&__address
+		font-size: rem(14)
+		margin-bottom: 30px
+
+	&__links
+		display: flex
+
+		a 
+			color: #000
+			margin-right: 40px
+
+			&:hover
+				border: 0
+				color: var(--main-color)
+
+
+			&[href*="tel:"]
+				&:before
+					content: ''
+					display: inline-block
+					size: 14px
+					background: url('../img/ico-phone.svg') no-repeat center
+					background-size: contain
+					margin-right: 16px
+			&[href*="mailto:"]
+				&:before
+					content: ''
+					display: inline-block
+					size: 14px
+					background: url('../img/ico-mail.svg') no-repeat center
+					background-size: contain
+					margin-right: 16px
+
+
+	&__btn
+		margin-top: 25px
+
+	.text-page
+		ul
+			padding-left: 0
+			margin-top: 10px
+
+			li
+				&:before
+					content: ''
+					size: 5px
+					border-radius: 50%
+					background: var(--main-color)
+
+	.slider-3
+		position: relative
+		width: 760px
+
+		.slick
+			&-list
+				margin: 0 -15px
+
+			&-slide
+				margin: 0 15px
+
+
+.slider-arrow
+	position: absolute
+	top: calc(50% - 24px)
+	left: -24px
+	right: -24px
+	display: flex
+	justify-content: space-between
+	z-index: 10
+
+.slick
+	&-arrow
+		position: relative
+		size: 48px
+		border-radius: 50%
+		border: 0
+		background: #EEEEF1 !important
+		font-size: 0 !important
+		padding: 0
+
+		&:before
+			content: ''
+			position: absolute
+			display: block
+			size: 6px
+			top: calc(50% - 3px)
+			left: calc(50% - 3px)
+			border-top: 1px solid var(--main-color)
+			border-right: 1px solid var(--main-color)
+			transform: rotate(45deg)
+
+	&-prev
+		transform: rotate(180deg)
+
 
 .bx-newslist-block
 	padding: 0
@@ -440,6 +651,8 @@
 
 	&:hover 
 		text-decoration: none
+		background: var(--main-color)
+		color: #fff
 
 	&:active 
 		position: relative
