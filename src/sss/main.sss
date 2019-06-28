@@ -4,8 +4,260 @@
 @import "_text-styles.sss"
 @import "_form-elements.sss"
 @import "_blog.sss"
-
 @import "_slider-main.sss"
+
+.fancybox-skin
+	padding: 0 !important
+
+.fancybox-inner
+	overflow: hidden !important
+
+.forms
+	display: none
+
+.forms-calc
+	width: 938px !important
+	background: #F9F9FA
+	padding: 70px 
+
+	input
+		height: 60px
+		border-radius: 10px
+		background: #fff
+		border: 0
+	.form
+		display: flex
+
+	.forms-title
+		font-size: rem(30)
+		font-weight: 600
+		text-align: left
+		margin-bottom: 40px
+
+	.forms-wrap-cont
+		max-width: 373px
+		width: 100%
+		margin-right: 66px
+
+		input
+			text-align: center
+
+
+		.forms-input-cont
+			display: flex
+			flex-direction: row-reverse
+			align-items: center
+			justify-content: space-between
+
+			&:not(:first-child)
+				margin-top: 30px
+
+	.forms-wrap-result
+
+
+		.forms-wrap
+			background: var(--main-color)
+			color: #fff
+			padding: 55px 60px
+			width: 360px
+
+		.forms-input-cont
+			display: flex
+			flex-direction: column-reverse
+			align-items: flex-start
+
+			&:not(:first-child)
+				margin-top: 50px
+
+		.forms__label
+			margin-bottom: 17px
+
+		input
+			background: var(--main-color)
+			color: #fff
+
+
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
+	width: 100%
+
+.lawyer-slider
+
+	&-cont
+		margin: 80px 0
+
+
+	&-title
+		display: flex
+		justify-content: space-between
+		align-items: center
+
+		font-size: rem(30)
+		font-weight: 600
+		margin-bottom: 43px
+
+		span
+			span
+				color: var(--main-color)
+
+	.slider-arrow
+		position: static
+
+	.slick
+		&-list
+			margin: 0 -15px
+
+		&-slide
+			margin: 0 15px
+
+		&-next
+			margin-left: 20px
+
+	&__item
+		display: flex !important
+		border: 1px solid #F1F1F1
+		align-items: center
+		text-align: left
+
+
+
+		figure
+			margin-right: 43px
+
+		&-name
+			font-size: rem(20)
+			font-weight: 600
+			margin-bottom: 10px
+
+		&-post
+			margin-bottom: 25px
+
+		&-links
+			a
+				display: inline-block
+
+				&:not(:first-child)
+					margin-top: 10px
+
+				&[href*="tel:"]
+					&:before
+						content: ''
+						display: inline-block
+						size: 14px
+						background: url('../img/ico-phone.svg') no-repeat center
+						background-size: contain
+						margin-right: 16px
+
+				&[href*="mailto:"]
+					&:before
+						content: ''
+						display: inline-block
+						size: 14px
+						background: url('../img/ico-mail.svg') no-repeat center
+						background-size: contain
+						margin-right: 16px
+
+
+.menu_content
+	margin-bottom: 20px
+
+.bx-newslist
+	width: 100%
+
+.content 
+	.container
+		// display: flex
+		// flex-direction: row-reverse
+		// text-align: left
+
+		&-inner
+			margin-top: 80px
+			text-align: left
+
+		.aside
+			text-align: left
+
+	.menu_content
+		.container
+			flex-direction: row
+			align-items: center
+.aside
+	text-align: left
+	margin-left: 93px
+	width: 340px
+	float: right
+
+	+ .container-inner
+		width: calc(100% - 93px - 340px)
+
+	&-menu
+		background: var(--main-color)
+		padding: 30px 0
+
+		ul
+			padding: 0
+			margin: 0
+
+		a
+			display: block
+			padding: 15px 58px
+			color: #fff
+			text-decoration: none
+			text-decoration: none
+			border: 0
+
+			&:hover
+				text-decoration: none
+				border: 0
+				background: #304498
+
+
+.legal-advantages
+	margin: 50px 0
+
+	&__list
+		display: flex
+		flex-wrap: wrap
+		margin: 0 0 -50px -130px
+
+	&__item
+		width: calc((100% - 130px * 2) / 2)
+		margin: 0 0 50px 130px
+		display: flex
+		align-items: center
+		font-weight: 600
+		font-size: rem(16)
+
+		figure
+			flex: none
+			margin-right: 35px
+			width: 50px
+			text-align: center
+
+.reason
+	margin: 50px 0
+
+	ul
+		padding-left: 0
+		margin-top: 30px
+
+	li
+		position: relative
+		display: flex
+		margin-bottom: 33px
+
+		&:before
+			content: ''
+			size: 30px
+			background: url('../img/ico-checkbox.svg') no-repeat center
+			background-size: contain
+			display: inline-block
+			margin-right: 35px
+			flex: none
+
+
+.bx-newslist-container
+	h2
+		margin-bottom: 20px
 
 .logo-mobile
 	display: none
@@ -118,7 +370,7 @@
 	&__list
 		display: flex
 		flex-wrap: wrap
-		margin: 0 0 -20px -20px
+		margin: 0 0 -50px -100px
 
 	&__item
 		width: calc((100% - 100px * 3) / 3)
@@ -174,8 +426,6 @@
 
 
 
-
-
 .best-offer
 
 	&-cont
@@ -228,8 +478,6 @@
 
 		&-slide
 			margin: 0 10px
-
-
 
 
 .personal-one
@@ -829,11 +1077,6 @@
 				display: inline-block
 
 .menu_bLine
-	// position: absolute
-	// left: 0
-	// right: 0
-	// bottom: 0
-	// overflow: hidden
 
 	ul
 		margin: 0 auto
@@ -1316,17 +1559,6 @@
 	background-color: #F9F9FA
 	color: #000
 	
-	// .foot_form
-	//  display: flex
-	//  flex-wrap: wrap
-	//  margin: 0 0 -30px -30px
-
-	// .input
-	//  width: calc((100% - 30px * 3) / 3)
-	//  margin: 0 0 30px 30px
-
-	//  &:last-child
-	//      width: 100% !important
 
 .foot_form
 	display: flex
@@ -1364,6 +1596,11 @@
 		padding: 22px 30px
 		border-radius: 26px
 
+.bx-newslist-img
+	margin-right: 20px
+
+.filter-cont
+	margin-bottom: 30px
 
 @media screen and (max-width: 1500px)
 	.menu_tLine 
@@ -1373,17 +1610,24 @@
 	.top_line-logo
 		display: none
 
-
+	.best-offer-cont, .consoltation-form-cont, .why-forum-cont, .testemonials-cont, .work-stage-cont, .contacts-cont
+		padding: 50px 0
 
 
 @media screen and (max-width: 1160px)
 
-	.logo-mobile
-		display: block
-		margin: 0 auto !important
+	.bx-yandex-view-layout
+		width: 100% !important
 
-		img
-			max-width: 150px
+	.slider-arrow
+		left: 0
+		right: 0
+
+	.best-offer__item-info
+		padding: 20px
+
+	.blog__item-info
+		padding: 20px
 
 	.container 
 		width: 100%
@@ -1423,9 +1667,6 @@
 		background: rgba(0, 0, 0, 0.9)
 		left: -100%
 		opacity: 0
-		-webkit-transition: all 0.3s ease-in-out
-		-moz-transition: all 0.3s ease-in-out
-		-o-transition: all 0.3s ease-in-out
 		transition: all 0.3s ease-in-out
 		float: none
 	
@@ -1443,10 +1684,12 @@
 		ul 
 			width: 100%
 			display: block
+
 			li 
 				display: block
 				border-top: 1px solid #2da9e9
 				margin: 0
+
 				&:first-child 
 					border: none
 				
@@ -1454,6 +1697,7 @@
 					padding: 22px 5px 17px 59px
 					text-align: left
 					height: auto
+
 					&:after 
 						top: 50%
 						left: 15px
@@ -1464,6 +1708,7 @@
 					padding: 22px 5px 17px 59px
 					text-align: left
 					height: auto
+
 					&:after 
 						top: 50%
 						left: 15px
@@ -1499,10 +1744,6 @@
 					&:after 
 						background-position: -197px 0 !important
 					
-				
-			
-		
-	
 	.menu_tLine 
 		li 
 			display: block
@@ -1513,6 +1754,7 @@
 				padding: 22px 15px 17px
 				border: none !important
 				color: #fff !important
+
 				&:hover 
 					background-color: #2da9e9
 				
@@ -1576,6 +1818,7 @@
 	.social 
 		text-align: center
 		float: none
+
 		a 
 			margin: 0 5px 10px
 		
@@ -1632,6 +1875,7 @@
 		font-size: 12px
 		height: 24px
 		padding-top: 0
+
 		&:before 
 			border-width: 0 22px 5px 22px
 			left: 3px
@@ -1672,6 +1916,7 @@
 			left: 15px
 			margin: -12px 0 0
 			top: 50%
+
 			img 
 				&:first-child 
 					display: none !important
@@ -1757,11 +2002,26 @@
 		.menu__link
 			color: #000 !important
 
+	.personal-one__img
+		margin-right: 30px
+
+	.personal-one .slider-3
+		width: 652px
 
 
+	.content 
+		.container-inner 
+			margin-top: 45px
 
+		.container 
+			.aside
+				margin-top: 0
 
-@media screen and (max-width: 1024px) 
+@media screen and (max-width: 1024px)
+
+	.blog__item
+		width: calc((100% - 60px)/2)
+
 	.big_fall_block_wrap 
 		text-align: center
 	
@@ -1799,10 +2059,130 @@
 		.to_fav 
 			margin-left: 10px
 			margin-right: 10px
+
+	.calc_form_top
+		padding: 20px 20px 50px 20px
+
+	.big_fall_text
+		left: 20px
+
+	.big_fall_block_wrap .big_fall_text.open+.big_fall_block
+		padding: 25px 20px
+
+	.sort_block .calc_form_bottom
+		padding: 20px
 		
 	
 
 @media screen and (max-width: 1000px)
+
+	.aside
+		float: none
+		width: 100%
+		margin: 20px 0  !important
+
+		&-menu
+			overflow-x: auto
+			padding: 0
+			background: #fff
+			-webkit-overflow-scrolling: touch
+
+			ul
+				width: 100%
+				display: flex
+
+				li
+					margin: 0
+					margin-right: 20px
+				
+				a
+					white-space: nowrap
+					padding: 10px 20px
+					border-radius: 30px
+					border: 1px solid var(--main-color)
+					color: #000
+
+	.aside+.container-inner
+		width: 100%
+
+	.lawyer-slider-cont
+		margin: 45px 0
+
+	.lawyer-slider__item
+		align-items: flex-start
+
+		&-post
+			margin-bottom: 15px
+
+
+		figure
+			margin: 0
+
+		&-info
+			padding: 20px
+
+	.why-forum
+
+		&__list
+			margin: 0 0 -50px -50px
+
+		&__item
+			width: calc((100% - 50px * 3) / 3)
+			margin: 0 0 50px 50px
+
+	.work-stage__item
+		width: calc((100% - 60px)/2)
+		padding: 20px
+
+		&-title
+			margin-bottom: 10px
+
+
+	.best-offer__title, .consoltation-form__title, .why-forum__title, .work-stage__title, .contacts__title
+		font-size: 1.5rem
+		margin-bottom: 30px
+
+	.calc_form_top dl:first-child
+		flex-wrap: wrap
+
+	.personal-one
+		flex-direction: column
+		align-items: flex-start
+
+	.logo
+		display: none
+
+	.logo.logo-mobile
+		display: block
+		position: absolute
+		top: 7px
+		left: 0
+		right: 0
+		bottom: 0
+
+		img
+			max-width: 150px
+
+	.personal-one
+		&__img
+			margin: 0 0 20px 0
+
+		&__top
+			padding: 25px 35px
+			margin-top: 25px
+			margin-bottom: 35px
+
+		&__info
+			width: 100%
+
+		.slider-3
+			width: 100%
+
+	.header .top_adr_hold
+		text-align: center
+		box-sizing: border-box
+		padding: 0 14px
+		width: 100%
 	
 	.top_adr_wrap
 		display: none
@@ -1829,6 +2209,7 @@
 		line-height: 1.2
 		font-size: 27px
 
+
 	.adv_sec .adv_block
 		width: calc((100% - 60px)/2)
 
@@ -1844,10 +2225,16 @@
 	.footer-advantages
 		display: none
 
+	.bx-newslist-content
+		width: 41%
+
+
+
 @media screen and (max-width: 800px) 
 	.header 
 		.top_adr_hold 
 			text-align: center
+
 			&:after 
 				display: none
 			
@@ -1934,9 +2321,6 @@
 					text-align: center
 					margin-left: 0
 				
-			
-		
-	
 	.big_fall_block 
 		.customSelectCalcSmall 
 			display: block
@@ -1947,9 +2331,8 @@
 	
 	.big_fall_block_wrap 
 		.big_fall_text.open 
-			+ 
-				.big_fall_block 
-					padding-top: 10px
+			+ .big_fall_block 
+				padding-top: 10px
 				
 			
 		
@@ -1958,6 +2341,7 @@
 		dl 
 			display: block
 			text-align: center
+
 			dt 
 				display: block
 				margin: 0 0 5px
@@ -1965,26 +2349,229 @@
 			dd 
 				display: block
 			
-		
-	
 
-@media screen and (max-width: 667px) 
-	h1 
-		font-size: 37px
+@media screen and (max-width: 667px)
+
+	.legal-advantages
+		&-cont
+			margin: 25px 0
+
+		&__item
+			width: 100%
+			margin: 0 0 25px 130px
+
+	.lawyer-slider__item
+		flex-direction: column
+
+
+
+		figure, img
+			width: 100%
+
+	.lawyer-slider-title
+		flex-direction: column
+		text-align: left
+		align-items: flex-start
+		font-size: 1.4rem
+		margin-bottom: 20px
+
+		.slider-arrow
+			margin-left: auto
+			margin-top: 10px
+
+
+
+	.best-offer-cont, .consoltation-form-cont, .why-forum-cont, .testemonials-cont, .work-stage-cont, .contacts-cont
+		padding: 30px 0
 	
-	h2 
-		font-size: 37px
-	
-	.h1 
-		font-size: 37px
-	
-	.h2 
-		font-size: 37px
+	.best-offer__title, .consoltation-form__title, .why-forum__title, .work-stage__title, .contacts__title
+		font-size: 1.4rem
+		margin-bottom: 20px
+
+	.consoltation-form 
+		.form-wrap
+			flex-direction: column
+
+		.default-input
+			width: 100%
+			margin-right: 0
+
+			+ .default-input
+				margin-top: 20px
+
+		.form-bot
+			flex-direction: column
+			align-items: flex-start
+			margin-top: 25px
+
+		.btn
+			margin-top: 20px
+
+		.checkbox__label
+			padding-left: 40px
+			text-align: left
+
+			&:before
+				position: absolute
+				top: 0
+				left: 0
+
+			&:after
+				top: 10px
+
+	.blog__item
+		width: 100%
+
+	.why-forum__item
+		width: 100%
+
+	.work-stage__item
+		width: 100%
+
+	.contacts
+		&__list
+			flex-wrap: wrap
+
+		&__item
+			width: 100%
+
+			&:not(:first-child)
+				margin-top: 20px
+
+	.filter
+		flex-wrap: nowrap
+
+		&-cont
+			overflow-x: auto
+			-webkit-overflow-scrolling: touch
+
+		a
+			white-space: nowrap
+
+	.calc_form
+
+		.slider_hold
+			flex-direction: column
+			height: auto
+
+		.prop
+			flex-direction: column
+			align-items: flex-start
+
+		dl
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+
+		.block_select_wrap, dd, .prop, .selectArea
+			width: 100% !important
+
+		.big_fall_block .prop
+			margin-right: 0
+
+		.big_fall_block>dl .prop dl
+			align-items: flex-start
+			margin-right: 0
+
+	.bx-yandex-view-layout
+		width: 100% !important
+
+	.sort_block
+		.calc_form_bottom
+
+			dl
+				display: flex 
+				align-items: flex-start
+
+			dt
+				width: 100%
+				text-align: left !important
+
+			dd
+				margin-top: 15px
+
+		.view_mode
+			width: 100%
+
+
+
+
+	.personal-one
+		&__img
+			width: 100%
+
+		&__links
+			display: flex
+			flex-direction: column
+
+		&__top
+			padding: 20px
+
+		&__info
+
+			.slider-3
+				img
+					width: 100%
+
+
+	.bx-newslist-content
+		width: 100%
+
+	.bx-newslist-img img
+		margin-bottom: 0
 	
 	.video 
 		width: 100%
 		height: auto
 		padding-bottom: 56%
+
+	.header .top_adr_hold
+		text-align: center
+		box-sizing: border-box
+		padding: 0 14px
+		width: 100%
+
+	.header .btn
+		font-size: 12px
+
+	.tabs .tab-hold li
+		margin: 0 0 20px 0
+
+	.slider_img2 
+		.sl_head 
+			flex-wrap: wrap
+
+			h2
+				margin-bottom: 15px
+
+	.h2
+		font-size: 23px
+
+	.sl_head 
+		.all
+			margin-left: 0
+
+	.sl_head .all+.sl_nav_hold
+		margin-left: auto
+
+	.adv_sec .adv_block
+		width: 100%
+		margin-left: 0
+
+	.menu_bottom
+		display: none
+
+	.footer-bot
+		display: flex
+		flex-direction: column
+		align-items: center
+
+	.copy
+		margin-bottom: 20px
+
+	.social
+		display: flex
+		justify-content: center
 	
 
 @media screen and (max-width: 568px) 
@@ -2009,8 +2596,8 @@
 			width: 45%
 		
 	
-
 @media screen and (max-width: 480px) 
+
 	.top_sec 
 		.top_sec_head 
 			.top_sec_bdTxt 
@@ -2020,8 +2607,6 @@
 				font-size: 20px
 				margin-left: 20px
 			
-		
-	
 	.our_serv_sec 
 		.our_serv 
 			display: block
@@ -2032,15 +2617,12 @@
 	
 	.slider_img2 
 		.hold 
-			>ul 
-				>li 
+			> ul 
+				> li 
 					width: 320px
 					padding-left: 10px
 					padding-right: 10px
-				
-			
-		
-	
+
 	.slider_hold 
 		.slider_amount1 
 			width: 293px
@@ -2048,7 +2630,6 @@
 			margin-right: 0
 			display: block
 			margin: 0 auto 20px
-			-webkit-border-radius: 5px
 			border-radius: 5px
 		
 		.slider_amount2 
@@ -2057,7 +2638,6 @@
 			margin-right: 0
 			display: block
 			margin: 0 auto 20px
-			-webkit-border-radius: 5px
 			border-radius: 5px
 		
 	
@@ -2079,9 +2659,8 @@
 			width: 256px
 			float: none
 			margin: 0 auto
+			padding: 0 15px
 		
-		padding: 0 15px
-	
 	.tabs2 
 		.tab-hold 
 			li 
@@ -2089,9 +2668,6 @@
 				a 
 					border: none !important
 				
-			
-		
-	
 	.main_prod_sec 
 		.btn 
 			display: block
@@ -2099,9 +2675,10 @@
 			margin-left: 0
 			margin-right: 0
 		
-	
+
 	.sort_block 
 		top: 0px !important
 		position: relative !important
 	
 
+@import "_media.sss"
