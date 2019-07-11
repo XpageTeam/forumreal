@@ -6,6 +6,246 @@
 @import "_blog.sss"
 @import "_slider-main.sss"
 
+
+.appartament-slick
+	&-cont
+		display: flex
+		flex-direction: column
+
+		+ .appartament-slick-cont
+			margin-top: 70px
+
+		.slick-track	
+			margin: 0 -10px
+
+		.slick-slide
+			margin: 0 10px
+
+	&-arrow
+		display: flex
+		align-items: center
+		position: relative
+
+		.slick-next
+			margin-left: 20px
+
+	&-top
+		display: flex
+		justify-content: space-between
+		align-items: center
+		font-size: rem(30)
+		font-weight: bold
+		margin-bottom: 43px
+
+		span
+			color: #000
+
+.to_top
+	color: #fff
+	background: var(--main-color)
+
+	&:before
+		border-color: transparent transparent var(--main-color) transparent
+
+.modal_win
+	max-width: 700px
+	padding: 20px
+
+	.foot_form
+		flex-direction: column
+
+		> *
+			&:not(:first-child)
+				margin-top: 20px
+
+		.input
+			margin-right: 0
+			width: 100%
+
+			input
+				border: 1px solid #e2e2e2
+				width: 100%
+
+			textarea
+				border: 1px solid #e2e2e2
+				width: 100%
+
+
+
+.manager_blk 
+	.manager_head
+		border-radius: 63px
+		position: relative
+		font-size: 18px
+		padding: 10px 10px 5px
+		margin-bottom: 20px
+		display: flex
+		justify-content: center
+
+	.btn
+		display: block
+		height: 50px
+		line-height: 1
+		font-size: 17px
+		text-align: center
+
+	.img
+		display: none
+
+
+
+.tabs2 + .aside
+	margin-left: 0
+	width: auto
+
+.tabs2 .tab-hold li a:hover,
+.tabs2 .tab-hold li.ui-tabs-active a
+	color: var(--main-color)
+
+.tabs2 .tab-hold li.ui-tabs-active
+	border-color: var(--main-color)
+
+
+.main_prod_sec 
+	.price
+		color: var(--main-color)
+
+		.rub svg
+			fill: var(--main-color)
+
+	.to_fav
+		color: var(--main-color)
+		display: flex
+		align-items: center
+
+		&:after
+			background-image: url('../img/ico-heart.svg')
+			background-repeat: no-repeat
+			background-position: center
+			background-size: contain
+
+		span
+			border-bottom:1px dashed  var(--main-color)
+
+	.main_time_work:after
+		background-image: url('../img/ico-circle-arrow.svg')
+		background-repeat: no-repeat
+		background-position: center
+		background-size: contain
+
+
+	.price.vtorichnoe-zhilyo:after
+		background-image: url('../img/ico-home.svg')
+		background-repeat: no-repeat
+		background-position: center
+		background-size: contain
+
+.calc_form
+	dd
+		margin: 0
+
+.prop-A
+	dt
+		margin-right: 15px
+
+.prop-P
+	width: calc((100% - 55px * 3) / 3)
+	margin: 0 55px 35px 0
+
+	.block_select_wrap
+		margin-bottom: 0
+
+.calc_form_top
+	display: flex
+	flex-wrap: wrap
+	
+	.selectArea
+		margin: 0
+
+	.prop-A
+		width: calc((100% - 55px * 2) / 2)
+
+.testemonials__list
+	display: flex
+	flex-wrap: wrap
+	margin: 0 0 -20px -20px
+	padding: 0
+
+	li
+		width: calc((100% - 20px * 2) / 2)
+		margin: 0 0 20px 20px !important
+		list-style: none
+		box-shadow: 0px 0px 9px rgba(126, 126, 131, 0.07)
+		padding: 20px !important
+
+		&:before
+			display: none !important
+
+	.rev_block
+		box-shadow: none
+		max-width: 100%
+
+	.text_wrap
+		padding: 0 !important
+
+
+input[type="select-one"]
+	display: none
+
+.selectize-dropdown
+	position: absolute
+	border-radius: 20px
+	background: #fff
+	width: auto !important
+	box-shadow: 0px 0px 9px rgba(126, 126, 131, 0.07)
+	margin-left: -26px
+	padding: 0 25px 25px 25px
+	background: #fff
+	z-index: 10
+	margin-top: 25px
+
+	&:before
+		content: ''
+		display: block
+		size: 20px
+		transform: rotate(45deg)
+		position: absolute
+		top: -11px
+		right: 25px
+		box-shadow: 0px 0px 9px rgba(126, 126, 131, 0.07)
+		background: #fff
+
+	&-content
+		position: relative
+		z-index: 100
+		padding-top: 25px
+		background: #fff
+
+
+	.option
+		text-align: left
+		white-space: nowrap
+		padding: 5px 0
+		cursor: pointer
+
+.has-items
+	.item
+		position: relative
+		padding-right: 25px
+		white-space: nowrap
+
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			right: 0
+			top: calc(50% - 3px)
+			size: 6px
+			transform: rotate(45deg)
+			border-right: 1px solid var(--main-color)
+			border-bottom: 1px solid var(--main-color)
+
+
 .fancybox-skin
 	padding: 0 !important
 
@@ -350,6 +590,8 @@
 				content: counter(i)
 				margin: 0 10px 0 25px
 
+
+
 .testemonials-cont
 	padding: 70px 0 85px
 
@@ -637,6 +879,36 @@
 	align-items: flex-start
 	margin: 0 0 -35px -35px
 
+	.customSelectCalcLarge .selectIn
+		min-width: auto
+		width: 100%
+
+	.selectArea
+		margin: 0
+		width: 100% !important
+
+	dd
+		width: 100%
+
+	.prop-K
+
+		dl
+			display: flex
+			align-items: center
+
+		dt
+			min-width: auto
+
+	.prop-A
+		width: 100%
+		// margin-right: 0 !important
+
+		dd
+			width: 100%
+
+		.slider_wrap
+			width: 100%
+
 	dl
 		&:nth-last-child(1)
 			.prop
@@ -666,7 +938,7 @@
 
 
 	.prop
-		margin-right: 35px
+		margin-right: 55px
 
 		// &:not(:first-child)
 		//  margin-left: 35px
@@ -764,7 +1036,7 @@
 		font-size: 14px
 		position: relative
 		padding: 0 1px
-		width: 100px
+		width: 150px
 		text-align: center
 		height: 40px
 		border-radius: 0
@@ -980,7 +1252,8 @@
 	display: inline-block
 	vertical-align: top
 	text-align: center
-	margin-right: 60px
+	margin-right: 50px
+	margin-left: 15px
 
 	.time_work
 		&:after
@@ -1318,6 +1591,10 @@
 		justify-content: space-between
 		align-items: center
 
+	h2
+		width: auto
+
+
 
 	.prev, .next
 		cursor: pointer
@@ -1562,6 +1839,7 @@
 
 .foot_form
 	display: flex
+	align-items: center
 	flex-wrap: wrap
 
 	a
@@ -1593,7 +1871,7 @@
 		font-weight: 700
 		font-size: rem(14)
 		border-radius: 26px
-		padding: 22px 30px
+		padding: 18px 30px
 		border-radius: 26px
 
 .bx-newslist-img
@@ -1615,6 +1893,38 @@
 
 
 @media screen and (max-width: 1160px)
+
+	.appartament-slick
+			
+		&-top
+			font-size: rem(20)
+
+
+
+	.big_fall_block 
+		.prop
+			margin-right: 15px
+
+		.prop-A
+			margin-right: 30px
+		.prop-P
+			.block_select_wrap
+				width: 100%
+
+	.calc_form dd
+		width: 100%
+
+	.calc_form_top .selectArea
+		width: 100% !important
+
+	.prop-P
+		width: calc((100% - 25px * 2) / 2)
+		margin: 0 25px 35px 0
+
+	.calc_form_top
+
+		.prop-A
+			width: calc((100% - 55px * 2) / 2)
 
 	.bx-yandex-view-layout
 		width: 100% !important
@@ -2076,6 +2386,11 @@
 
 @media screen and (max-width: 1000px)
 
+	.testemonials__list
+		margin: 0 0 -20px -35px
+
+
+
 	.aside
 		float: none
 		width: 100%
@@ -2351,6 +2666,122 @@
 			
 
 @media screen and (max-width: 667px)
+
+	.appartament-slick
+
+			
+		&-top
+			font-size: rem(18)
+			margin-bottom: 20px
+
+		&-cont
+
+			.slick-track
+				margin: 0
+
+
+
+	.fancybox-lock, .fancy-active
+		> .wrapper
+			opacity: 0
+			size: 0 !important
+		#content, header, footer, .footer-place
+			display: none
+		body, html
+			overflow-x: !important
+		.fancybox-lock, .fancybox-lock body
+			overflow-x: hidden !important
+		.fancybox-wrap, .fancybox-mobile, .fancybox-type-inline, .fancybox-opened
+			position: static !important
+			top: 0 !important
+			left: 0 !important
+			opacity: 1 !important
+			overflow: visible !important
+			width: 100% !important
+			height: 100% !important
+		.fancybox-skin
+			width: 100% !important
+			height: 100% !important
+		.fancybox-outer
+			width: 100% !important
+			height: 100% !important
+		.fancybox-inner
+			width: 100% !important
+			height: 100% !important
+			overflow-y: scroll !important
+			overflow-x: hidden !important
+			-webkit-overflow-scrolling: touch
+		.fancybox-overlay
+			width: 100% !important
+			height: 100% !important
+			display: block !important
+		.fancybox-overlay-fixed
+			width: 100% !important
+			height: 100% !important
+			display: block !important
+			overflow: auto !important
+		.fancybox-overlay
+			background: none !important
+			width: 100% !important
+
+		.fancybox-overlay.fancybox-overlay-fixed
+			z-index: -1 !important
+
+
+	.forms
+		padding: 20px
+
+
+	#calculator
+		.forms-input-cont
+			flex-direction: column-reverse
+			align-items: flex-start
+
+	.forms-calc
+		width: 100% !important
+
+		.forms-wrap-cont
+			max-width: 100%
+			margin: 0
+
+		.form
+			flex-direction: column
+
+		.forms-title
+			font-size: 1.4rem
+			margin-bottom: 25px
+
+		input 
+			height: 40px
+			width: 100%
+
+		.forms__label
+			margin-bottom: 5px
+
+		.forms-wrap-cont .forms-input-cont:not(:first-child)
+			margin-top: 20px
+
+		.forms-wrap-result .forms-wrap
+			padding: 20px
+			margin-top: 20px
+			width: 100%
+
+	.fancybox-inner, .fancybox-wrap
+		width: 100% !important
+		height: 100vh !important
+
+	.fancybox-wrap.fancybox-desktop.fancybox-type-inline.fancybox-opened
+		left: 0 !important
+		top: 0 !important
+
+
+
+	.testemonials__list 
+		li
+			width: 100%
+
+		.rev_block
+			padding-bottom: 0
 
 	.legal-advantages
 		&-cont
@@ -2681,4 +3112,111 @@
 		position: relative !important
 	
 
-@import "_media.sss"
+@supports (display: grid)
+
+	.calc_form_top, .big_fall_block
+		display: grid
+		grid-template-columns: repeat(3,1fr)
+		grid-gap: 30px
+
+		dd
+			width: 100%
+
+	.calc_form 
+		.block_select_wrap
+			min-width: auto
+			width: 100%
+
+	.big_fall_block 
+		.prop
+			margin: 0
+
+
+	.selectArea
+		width: 100% !important
+
+	.calc_form .bx_filter_button_box.active
+		padding: 0
+		grid-column: span 3
+
+	.clb ~ .bx_filter_button_box.active
+		padding: 20px
+
+		.bx_filter_parameters_box_container
+			display: flex
+			justify-content: center
+
+
+	.prop
+		width: 100%
+		margin: 0
+
+		&-A
+			grid-column: span 3
+			width: 100% !important
+
+			dd
+				width: 100% !important
+
+			.slider_wrap
+				width: 100%
+
+
+@media screen and (max-width: 1200px)
+
+	@supports (display: grid)
+
+		.big_fall_block_wrap .big_fall_text.open+.big_fall_block, .calc_form_top
+			margin: 0 15px
+
+		.big_fall_block, .calc_form_top
+			grid-gap: 20px
+
+
+
+
+@media screen and (max-width: 1000px)
+
+	@supports (display: grid)
+
+		.big_fall_block, .calc_form_top 
+			grid-template-columns: repeat(2,1fr)
+
+		.prop-A
+			grid-column: span 2
+
+		.calc_form .btn
+			margin: 0
+
+		.bx_filter_parameters_box_container
+			text-align: left
+
+		.sort_block .calc_form_bottom dl dd:last-child
+			text-align: right
+
+		.calc_form .bx_filter_button_box.active
+			grid-column: span 2
+
+@media screen and (max-width: 667px)
+
+	@supports (display: grid)
+
+		.big_fall_block, .calc_form_top 
+			grid-template-columns: repeat(1,1fr)
+
+		.prop-A
+			grid-column: span 1
+
+
+		.big_fall_block_wrap .big_fall_text.open+.big_fall_block, .calc_form_top
+			margin: 0
+
+		.big_fall_block ~ .container
+			padding: 0
+
+		.sort_block .calc_form_bottom dl
+			margin: 0
+
+		.calc_form .bx_filter_button_box.active
+			grid-column: span 1
+

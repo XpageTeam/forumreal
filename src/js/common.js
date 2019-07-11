@@ -8,10 +8,15 @@ window.$ = $;
 window.jQuery = $;
 
 
-if (!is.touchDevice())
-	require("selectize/dist/css/selectize.css")
-
 $(function(){
+
+
+if (!is.touchDevice())
+	$(".selectize").selectize();
+
+	// $('#calculator ').bind('input', function(){
+	//     $('#result').html($(this).val().length);
+	// });
 
 	
 
@@ -50,6 +55,32 @@ $(function(){
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		appendArrows: $('.best-offer .slider-arrow'),
+		responsive: [
+			{
+	         breakpoint: 1000,
+	         settings: {
+	           slidesToShow: 2,
+	         }
+	       },
+	       {
+	         breakpoint: 600,
+	         settings: {
+	           slidesToShow: 1,
+	         }
+	       },
+	       
+	    ]
+	})
+
+	let $appartamentSlick = $(".appartament-slick-list");
+
+	$appartamentSlick.on('init', slick => {
+
+	}).slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		appendArrows: $appartamentSlick.closest('.appartament-slick-cont').find('.appartament-slick-arrow'),
+		infinite: true,
 		responsive: [
 			{
 	         breakpoint: 1000,
