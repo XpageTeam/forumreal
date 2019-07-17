@@ -8,18 +8,27 @@
 
 
 .appartament-slick
+
 	&-cont
 		display: flex
 		flex-direction: column
+		margin-bottom: 20px
 
 		+ .appartament-slick-cont
 			margin-top: 70px
 
-		.slick-track	
+		.slick-list	
 			margin: 0 -10px
 
 		.slick-slide
 			margin: 0 10px
+
+		.prod_block
+			max-width: 100%
+			margin: 0
+			box-shadow: none
+			padding: 0
+			border: 0
 
 	&-arrow
 		display: flex
@@ -39,6 +48,19 @@
 
 		span
 			color: #000
+
+		.all
+			font-size: rem(14)
+			line-height: 1
+			font-weight: 500
+			border: 1px solid var(--main-color)
+			border-radius: 26px
+			padding: 14px 30px
+			color: var(--main-color)
+			display: inline-block
+			margin: 0 45px 0 auto
+
+
 
 .to_top
 	color: #fff
@@ -3004,6 +3026,20 @@ input[type="select-one"]
 		display: flex
 		justify-content: center
 	
+
+@media screen and (max-width: 660px)
+	
+	.appartament-slick
+		&-top
+			flex-wrap: wrap
+
+			.all
+				margin-right: 0
+
+		&-arrow
+			width: 100%
+			justify-content: flex-end
+			margin-top: 15px
 
 @media screen and (max-width: 568px) 
 	.top_sec 

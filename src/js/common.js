@@ -72,31 +72,39 @@ if (!is.touchDevice())
 	    ]
 	})
 
-	let $appartamentSlick = $(".appartament-slick-list");
+	$('.appartament-slick-cont').each(function(i,el){
+		var $this = $(el);
 
-	$appartamentSlick.on('init', slick => {
+		$this.find(".appartament-slick-list").on('init', slick => {
 
-	}).slick({
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		appendArrows: $appartamentSlick.closest('.appartament-slick-cont').find('.appartament-slick-arrow'),
-		infinite: true,
-		responsive: [
-			{
-	         breakpoint: 1000,
-	         settings: {
-	           slidesToShow: 2,
-	         }
-	       },
-	       {
-	         breakpoint: 600,
-	         settings: {
-	           slidesToShow: 1,
-	         }
-	       },
-	       
-	    ]
+		}).slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			appendArrows: $this.find('.appartament-slick-arrow'),
+			infinite: true,
+			responsive: [
+				{
+		         breakpoint: 1000,
+		         settings: {
+		           slidesToShow: 2,
+		         }
+		       },
+		       {
+		         breakpoint: 600,
+		         settings: {
+		           slidesToShow: 1,
+		           // appendArrows: $this.find('.appartament-slick-list'),
+		         }
+		       },
+		       
+		    ]
+		})
+
 	})
+
+
+
+
 
 
 
