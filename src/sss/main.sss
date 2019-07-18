@@ -6,6 +6,26 @@
 @import "_blog.sss"
 @import "_slider-main.sss"
 
+.vacancy-list
+
+	.bx-newslist-block
+		display: flex
+
+		
+	.bx-newslist-img
+		flex: none
+		max-width: 370px
+		width: 100%
+		margin-right: 30px
+
+
+
+	.bx-newslist-title
+		font-size: rem(20)
+		font-weight: bold
+		margin-bottom: 20px
+
+
 
 .appartament-slick
 
@@ -488,6 +508,7 @@ input[type="select-one"]
 		align-items: center
 		font-weight: 600
 		font-size: rem(16)
+		color: #000
 
 		figure
 			flex: none
@@ -2407,6 +2428,25 @@ input[type="select-one"]
 	
 
 @media screen and (max-width: 1000px)
+	
+	.vacancy-list
+		.row
+			display: flex
+			flex-wrap: wrap
+			margin: 0 0 -20px -20px
+
+
+		.bx-newslist-img
+			margin-bottom: 20px
+
+		.bx-newslist-container
+			width: calc((100% - 20px * 2) /2)
+			margin: 0 0 20px 20px
+		.bx-newslist-block
+			flex-direction: column
+
+		.bx-newslist-content
+			width: 100%
 
 	.testemonials__list
 		margin: 0 0 -20px -35px
@@ -2688,6 +2728,25 @@ input[type="select-one"]
 			
 
 @media screen and (max-width: 667px)
+
+	.vacancy-list
+		.row
+			display: flex
+			flex-wrap: wrap
+			margin: 0 0 -20px -20px
+
+
+		.bx-newslist-img
+			margin-bottom: 20px
+			
+		.bx-newslist-container
+			width: 100%
+			margin: 0 0 20px 20px
+		.bx-newslist-block
+			flex-direction: column
+
+		.bx-newslist-content
+			width: 100%
 
 	.appartament-slick
 
