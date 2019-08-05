@@ -166,6 +166,11 @@
 			background-position: center
 			background-size: contain
 
+
+
+
+		
+
 		span
 			border-bottom:1px dashed  var(--main-color)
 
@@ -189,6 +194,10 @@
 .prop-A
 	dt
 		margin-right: 15px
+.prop-A, .prop-P, .big_fall_block .prop, .calc_form dl
+	dt
+		font-weight: bold
+		color: #000
 
 .prop-P
 	width: calc((100% - 55px * 3) / 3)
@@ -618,6 +627,7 @@ input[type="select-one"]
 			font-weight: 600
 			color: var(--main-color)
 			margin-bottom: 25px
+			padding-left: 15px
 
 			&:after
 				content: ''
@@ -629,9 +639,9 @@ input[type="select-one"]
 				background: var(--main-color)
 				border-radius: 50%
 
-			&:before
-				content: counter(i)
-				margin: 0 10px 0 25px
+			// &:before
+			// 	content: counter(i)
+			// 	margin: 0 10px 0 25px
 
 
 
@@ -1042,6 +1052,22 @@ input[type="select-one"]
 		display: inline-block
 		vertical-align: top
 		cursor: pointer
+		padding-left: 20px
+
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			top: -1px
+			width: 14px
+			height: 15px
+			background: url(../img/main_ico_w.png) no-repeat 0 0
+			background-size: 80px auto
+			background-position: -67px -342px
+
+		span
+			text-decoration: underline
 
 	.big_fall_block 
 		margin: 0
@@ -1516,6 +1542,11 @@ input[type="select-one"]
 	background-repeat: no-repeat
 	background-position: center
 	background-size: contain
+	transition: background .3s ease
+
+	&.active, &:hover
+		background-image: url('../img/ico-heart-active.svg')
+		background-position: 0 !important
 
 .loc_small_ico
 	display: inline-block
@@ -2533,9 +2564,8 @@ input[type="select-one"]
 		display: block
 		position: absolute
 		top: 7px
-		left: 0
-		right: 0
-		bottom: 0
+		left: 50%
+		transform: translate3d(-50%,0,0)
 
 		img
 			max-width: 150px
@@ -3293,6 +3323,12 @@ input[type="select-one"]
 			grid-column: span 2
 
 @media screen and (max-width: 667px)
+
+	.header .logo
+		margin-left: 0
+
+	#menu_label
+		z-index: 1000
 
 	@supports (display: grid)
 
