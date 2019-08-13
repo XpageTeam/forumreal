@@ -18,22 +18,32 @@ if (!is.touchDevice())
 	//     $('#result').html($(this).val().length);
 	// });
 
-	
+	$(".slider-3").each(function(i,el){
 
-	$(".slider-3 .slider__list").slick({
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		appendArrows: $('.slider-arrow'),
-		responsive: [
-	       {
-	         breakpoint: 600,
-	         settings: {
-	           slidesToShow: 1,
-	         }
-	       },
-	       
-	    ]
+		var $this = $(el);
+
+		$this.find(".slider__list").on('init', slick => {
+
+		}).slick({
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			appendArrows: $this.find('.slider-arrow'),
+			responsive: [
+		       {
+		         breakpoint: 600,
+		         settings: {
+		           slidesToShow: 1,
+		         }
+		       },
+		       
+		    ]
+		})
+
+
+
 	})
+
+
 
 	$(".slider-2 .slider__list").slick({
 		slidesToShow: 2,
