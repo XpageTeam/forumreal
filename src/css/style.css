@@ -339,15 +339,7 @@ a:hover {
 .half_hold .half {
   width: 50%;
 }
-.wrapper,
-.footer {
-  min-height: 100%;
-  width: 100%;
-  max-width: 10000px;
-  position: relative;
-  overflow: hidden;
-  margin: 0 auto;
-}
+
 .container {
   width: 1140px;
   margin: 0 auto;
@@ -1952,8 +1944,7 @@ a:hover {
       box-shadow:0 4px 35px 0 rgba(0, 0, 0, 0.3);
     }
 
-    .slider_img .prod_block:hover,
-    .rev_block:hover{
+    .slider_img .prod_block:hover d{
       -webkit-box-shadow:0 4px 20px 0 rgba(0, 0, 0, 0.3);
       box-shadow:0 4px 20px 0 rgba(0, 0, 0, 0.3);
     }

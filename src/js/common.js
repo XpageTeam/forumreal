@@ -4,6 +4,8 @@ import "selectize/dist/js/selectize.min.js"
 import "slick-carousel";
 import "slick-carousel/slick/slick.css";
 
+import "./standart-page.js"
+
 window.$ = $;
 window.jQuery = $;
 
@@ -65,6 +67,27 @@ if (!is.touchDevice())
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		appendArrows: $('.best-offer .slider-arrow'),
+		responsive: [
+			{
+	         breakpoint: 1000,
+	         settings: {
+	           slidesToShow: 2,
+	         }
+	       },
+	       {
+	         breakpoint: 600,
+	         settings: {
+	           slidesToShow: 1,
+	         }
+	       },
+	       
+	    ]
+	})
+
+	$(".otzyvy ul").slick({
+		slidesToShow: 3,
+		slidesToScroll: 1,
+		appendArrows: $('.otzyvy .sl_nav_hold .slider-arrow'),
 		responsive: [
 			{
 	         breakpoint: 1000,

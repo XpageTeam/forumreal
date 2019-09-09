@@ -6,6 +6,84 @@
 @import "_blog.sss"
 @import "_slider-main.sss"
 
+
+.otzyvy 
+	.sl_head
+		display: flex
+		justify-content: space-between
+		align-items: center
+		margin-bottom: 30px
+
+	ul
+		padding: 0
+
+	.all
+		font-size: .88rem
+		line-height: 1
+		font-weight: 500
+		border: 1px solid #344aa3
+		border: 1px solid var(--main-color)
+		border-radius: 26px
+		padding: 14px 30px
+		color: #344aa3
+		color: var(--main-color)
+		display: inline-block
+		margin: 0 45px 0 auto
+		font-weight: 300
+
+
+	.slider-arrow
+		position: static
+
+		.slick-next
+			margin-left: 20px
+
+
+	h2
+		width: auto !important
+
+	.rev_block
+		display: block
+
+	.slick
+		&-track, &-slide
+			display: flex !important
+
+		&-slide
+			height: auto !important
+			margin: 0 10px 
+
+			> div
+				display: flex !important
+				flex: 1 1 auto
+
+			li
+				background-color: #fff
+
+		&-list
+			margin: 0 -10px
+
+
+
+
+.footer
+	min-height: 100%
+	width: 100%
+	max-width: 10000px
+	position: relative
+	overflow: hidden
+	margin: 0 auto
+
+
+.wrapper 
+	min-height: 100%
+	width: 100%
+	max-width: 10000px
+	position: relative
+	margin: 0 auto
+
+
+
 .vacancy-list
 
 	.bx-newslist-block
@@ -24,7 +102,6 @@
 		font-size: rem(20)
 		font-weight: bold
 		margin-bottom: 20px
-
 
 
 .appartament-slick
@@ -703,11 +780,35 @@ input[type="select-one"]
 		&:not(:last-child)
 			margin-right: 55px
 
+		input
+			&::-webkit-input-placeholder
+				opacity: 1 !important
+				color: #000 !important
+
+			&:-moz-placeholder
+				opacity: 1 !important
+				color: #000 !important
+
+			&::-moz-placeholder
+				opacity: 1 !important
+				color: #000 !important
+
+			&:-ms-input-placeholder
+				opacity: 1 !important
+				color: #000 !important
+
+
+
+
 	.form-bot
 		display: flex
 		justify-content: space-between
 		align-items: center
 		margin-top: 45px
+
+		a
+			color: #fff !important
+			text-decoration: underline
 
 	.btn
 		font-weight: 700
@@ -2244,7 +2345,7 @@ input[type="select-one"]
 		margin-right: -15px
 	
 	.sl_head 
-		margin: 0 15px
+		margin: 0
 	
 	.adv_sec 
 		.adv_block_wrap 
@@ -2759,6 +2860,26 @@ input[type="select-one"]
 
 @media screen and (max-width: 667px)
 
+	.main_prod_sec 
+		.main_prod_text
+			text-align: left
+
+		.price
+			margin: 0
+			padding: 0
+			font-size: 22px
+
+			&:after
+				display: none
+
+		h1
+			font-size: 24px
+
+
+	.btn.quest
+		text-align: center
+
+
 	.vacancy-list
 		.row
 			display: flex
@@ -2796,7 +2917,7 @@ input[type="select-one"]
 		> .wrapper
 			opacity: 0
 			size: 0 !important
-		#content, header, footer, .footer-place
+		#content, header, footer, .footer-place, main
 			display: none
 		body, html
 			overflow-x: !important
@@ -2836,7 +2957,13 @@ input[type="select-one"]
 			width: 100% !important
 
 		.fancybox-overlay.fancybox-overlay-fixed
-			z-index: -1 !important
+			// z-index: -1 !important
+			// height: auto !important
+			// max-height: 100% !important
+			// position: absolute
+			// top: 0
+			// left: 0
+
 
 
 	.forms
@@ -3117,6 +3244,20 @@ input[type="select-one"]
 	
 
 @media screen and (max-width: 660px)
+
+	
+	.otzyvy
+		.sl_head
+			flex-wrap: wrap
+
+		.sl_nav_hold
+			width: 100%
+			justify-content: flex-end
+			margin-top: 15px
+
+		.slider-arrow
+			display: flex
+			justify-content: flex-end
 	
 	.appartament-slick
 		&-top
@@ -3129,6 +3270,27 @@ input[type="select-one"]
 			width: 100%
 			justify-content: flex-end
 			margin-top: 15px
+
+	.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
+		font-size: 18px
+		text-align: left
+
+	.detail_picture
+		width: 100%
+
+
+	
+	.text-page 
+		table 
+			td, th
+				padding: 5px
+
+				p 
+					margin: 0 !important
+
+	.fancybox-close
+		top: 10px !important
+		right: 10px !important
 
 @media screen and (max-width: 568px) 
 	.top_sec 

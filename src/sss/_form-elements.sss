@@ -180,65 +180,65 @@
 
 			&:focus
 
-			~ .forms__error-message
-				opacity: 0
+				~ .forms__error-message
+					opacity: 0
 
-
-		&::-webkit-input-placeholder
-			transition: opacity .3s ease
-			color: rgba(#000, .5)
-
-		&:-moz-placeholder
-			transition: opacity .3s ease
-			color: rgba(#000, .5)
-
-		&::-moz-placeholder
-			transition: opacity .3s ease
-			color: rgba(#000, .5)
-
-		&:-ms-input-placeholder
-			transition: opacity .3s ease
-			color: rgba(#000, .5)
-
-		&:not(:focus)
 
 			&::-webkit-input-placeholder
-				opacity: .3
-				color: #fff
+				transition: opacity .3s ease
+				color: rgba(#000, .5)
 
 			&:-moz-placeholder
-				opacity: .3
-				color: #fff
+				transition: opacity .3s ease
+				color: rgba(#000, .5)
 
 			&::-moz-placeholder
-				opacity: .3
-				color: #fff
+				transition: opacity .3s ease
+				color: rgba(#000, .5)
 
 			&:-ms-input-placeholder
-				opacity: .3
-				color: #fff
+				transition: opacity .3s ease
+				color: rgba(#000, .5)
 
-			&.js__have-content:valid
-				// background-image: url("../img/ico-true.svg")
+			&:not(:focus)
 
-			&.js__have-content:invalid
-				// background-image: url("../img/ico-close-red.svg")
+				&::-webkit-input-placeholder
+					opacity: .3
+					color: #fff
 
-		&:focus
-			border-color: var(--main-color)
-			// background-color: transparent
+				&:-moz-placeholder
+					opacity: .3
+					color: #fff
 
-			&::-webkit-input-placeholder
-				opacity: 0 !important
+				&::-moz-placeholder
+					opacity: .3
+					color: #fff
 
-			&:-moz-placeholder
-				opacity: 0 !important
+				&:-ms-input-placeholder
+					opacity: .3
+					color: #fff
 
-			&::-moz-placeholder
-				opacity: 0 !important
+				&.js__have-content:valid
+					// background-image: url("../img/ico-true.svg")
 
-			&:-ms-input-placeholder
-				opacity: 0 !important
+				&.js__have-content:invalid
+					// background-image: url("../img/ico-close-red.svg")
+
+			&:focus
+				border-color: var(--main-color)
+				// background-color: transparent
+
+				&::-webkit-input-placeholder
+					opacity: 0 !important
+
+				&:-moz-placeholder
+					opacity: 0 !important
+
+				&::-moz-placeholder
+					opacity: 0 !important
+
+				&:-ms-input-placeholder
+					opacity: 0 !important
 
 		&--select
 			padding: 0 30px 0 25px
