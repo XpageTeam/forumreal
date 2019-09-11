@@ -6,7 +6,12 @@
 @import "_blog.sss"
 @import "_slider-main.sss"
 
+.testemonials__list
 
+	.rev_block .rev_block_head .img
+		width: 245px
+		height: 165px
+		
 .otzyvy 
 	.sl_head
 		display: flex
@@ -2067,6 +2072,11 @@ input[type="select-one"]
 		padding: 50px 0
 
 
+@media screen and (max-width: 1200px)
+	
+	.calc_form_top
+		margin: 0 !important
+
 @media screen and (max-width: 1160px)
 
 	.appartament-slick
@@ -2860,6 +2870,13 @@ input[type="select-one"]
 
 @media screen and (max-width: 667px)
 
+
+	.our_serv_sec
+		h1
+			text-align: center
+
+
+
 	.main_prod_sec 
 		.main_prod_text
 			text-align: left
@@ -3199,9 +3216,14 @@ input[type="select-one"]
 		box-sizing: border-box
 		padding: 0 14px
 		width: 100%
+		flex-direction: column
 
-	.header .btn
-		font-size: 12px
+
+
+	.header 
+		.btn
+			font-size: 12px
+			margin: 0 0 20px 0 !important
 
 	.tabs .tab-hold li
 		margin: 0 0 20px 0
@@ -3245,6 +3267,37 @@ input[type="select-one"]
 
 @media screen and (max-width: 660px)
 
+
+	.footer-place
+		height: auto
+
+	.foot_form .input
+		margin: 0 0 15px 0
+
+	.appartament-slick-top .all, .sl_head .all
+		padding: 10px 15px
+		font-size: .88rem
+		line-height: 1
+
+	.appartament-slick-top
+		// display: flex
+		// align-items: center
+		// flex-direction: column
+
+		// .all
+		// 	margin-left: 0
+
+		span
+			font-size: 20px
+			// text-align: center
+			// margin-bottom: 10px
+			// width: 100%
+
+
+	// .appartament-slick-arrow
+	// 	justify-content: space-between
+
+
 	
 	.otzyvy
 		.sl_head
@@ -3271,12 +3324,12 @@ input[type="select-one"]
 			justify-content: flex-end
 			margin-top: 15px
 
-	.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
-		font-size: 18px
-		text-align: left
+	// .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
+	// 	font-size: 18px
+	// 	text-align: left
 
-	.detail_picture
-		width: 100%
+	// .detail_picture
+	// 	width: 100%
 
 
 	
