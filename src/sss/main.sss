@@ -17,7 +17,7 @@
 		display: flex
 		justify-content: space-between
 		align-items: center
-		margin-bottom: 30px
+		// margin-bottom: 30px
 
 	ul
 		padding: 0
@@ -64,6 +64,11 @@
 
 			li
 				background-color: #fff
+				margin: 40px 0
+
+				&:hover
+					box-shadow: 0 4px 35px 0 rgba(0,0,0,.3)
+
 
 		&-list
 			margin: 0 -10px
@@ -116,6 +121,10 @@
 		flex-direction: column
 		margin-bottom: 20px
 
+		.prod_block:after
+			display: none
+
+
 		+ .appartament-slick-cont
 			margin-top: 70px
 
@@ -127,8 +136,8 @@
 
 		.prod_block
 			max-width: 100%
-			margin: 0
-			box-shadow: none
+			margin: 40px 0
+			// box-shadow: none
 			padding: 0
 			border: 0
 
@@ -146,7 +155,7 @@
 		align-items: center
 		font-size: rem(30)
 		font-weight: bold
-		margin-bottom: 43px
+		// margin-bottom: 43px
 
 		span
 			color: #000
@@ -883,6 +892,14 @@ input[type="select-one"]
 
 .personal-one
 	display: flex
+
+	h2
+		font-size: rem(16)
+		margin-top: 30px
+		text-align: left
+
+	.prod_block:after
+		display: none
 
 	&__info
 		text-align: left
@@ -2867,8 +2884,18 @@ input[type="select-one"]
 			dd 
 				display: block
 			
-
 @media screen and (max-width: 667px)
+
+	.fancy-active 
+		.fancybox-wrap + .fancybox-overlay
+			display: none !important
+
+	.menu__link:hover
+		color: #fff !important
+
+	.main_prod_sec .price .rub
+		width: 12px
+
 
 
 	.our_serv_sec
@@ -2879,12 +2906,9 @@ input[type="select-one"]
 
 	.main_prod_sec 
 		.main_prod_text
-			text-align: left
+			// text-align: left
 
 		.price
-			margin: 0
-			padding: 0
-			font-size: 22px
 
 			&:after
 				display: none
