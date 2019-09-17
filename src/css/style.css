@@ -2360,10 +2360,10 @@ a:hover {
 
 .rub {
   display: inline-block;
-  vertical-align: top;
+  /*vertical-align: top;*/
   width: 13px;
   line-height: 0;
-  height: 19px;
+  /*height: 19px;*/
   position: relative;
   top: 0;
 }
