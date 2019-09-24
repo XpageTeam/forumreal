@@ -316,6 +316,7 @@ footer
 .prop-A
 	dt
 		margin-right: 15px
+
 .prop-A, .prop-P, .big_fall_block .prop, .calc_form dl
 	dt
 		font-weight: bold
@@ -2130,6 +2131,7 @@ input[type="select-one"]
 	.calc_form_top
 		margin: 0 !important
 
+
 @media screen and (max-width: 1160px)
 
 	.appartament-slick
@@ -2295,7 +2297,7 @@ input[type="select-one"]
 	.menu_tLine 
 		li 
 			display: block
-			border-top: 1px solid #2da9e9
+			border-top: 1px solid var(--main-color)
 			margin: 0
 			a 
 				text-transform: uppercase
@@ -2304,7 +2306,7 @@ input[type="select-one"]
 				color: #fff !important
 
 				&:hover 
-					background-color: #2da9e9
+					background-color: var(--main-color)
 				
 			
 			.active 
@@ -2312,7 +2314,7 @@ input[type="select-one"]
 				padding: 22px 15px 17px
 				border: none !important
 				color: #fff !important
-				background-color: #2da9e9
+				background-color: var(--main-color)
 			
 		
 	
@@ -3351,22 +3353,10 @@ input[type="select-one"]
 		line-height: 1
 
 	.appartament-slick-top
-		// display: flex
-		// align-items: center
-		// flex-direction: column
-
-		// .all
-		// 	margin-left: 0
 
 		span
-			font-size: 20px
-			// text-align: center
-			// margin-bottom: 10px
-			// width: 100%
+			font-size: 27px
 
-
-	// .appartament-slick-arrow
-	// 	justify-content: space-between
 
 
 	
@@ -3394,13 +3384,6 @@ input[type="select-one"]
 			width: 100%
 			justify-content: flex-end
 			margin-top: 15px
-
-	// .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
-	// 	font-size: 18px
-	// 	text-align: left
-
-	// .detail_picture
-	// 	width: 100%
 
 
 	
@@ -3522,13 +3505,22 @@ input[type="select-one"]
 		top: 0px !important
 		position: relative !important
 	
+@media screen and (max-width: 370px)
+	
+	.appartament-slick-top
+		span
+			font-size: 20px 
+
+	.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
+		font-size: 20px
 
 @supports (display: grid)
 
 	.calc_form_top, .big_fall_block
 		display: grid
-		grid-template-columns: repeat(3,1fr)
+		grid-template-columns: repeat(6,1fr)
 		grid-gap: 30px
+		align-items: end
 
 		dd
 			width: 100%
@@ -3559,26 +3551,31 @@ input[type="select-one"]
 
 
 	.prop
-		width: 100%
+		width: auto !important
 		margin: 0
+		flex-direction: column
+		align-items: flex-start
+
+		dt
+			margin-bottom: 10px
 
 		&-A
 			grid-column: span 3
-			width: 100% !important
+
 
 			dd
 				width: 100% !important
 
 			.slider_wrap
 				width: 100%
+		&-P
+			grid-column: span 3
 
 
 @media screen and (max-width: 1200px)
 
 	@supports (display: grid)
 
-		.big_fall_block_wrap .big_fall_text.open+.big_fall_block, .calc_form_top
-			margin: 0 15px
 
 		.big_fall_block, .calc_form_top
 			grid-gap: 20px
@@ -3591,10 +3588,10 @@ input[type="select-one"]
 	@supports (display: grid)
 
 		.big_fall_block, .calc_form_top 
-			grid-template-columns: repeat(2,1fr)
+			grid-template-columns: repeat(6,1fr)
 
-		.prop-A
-			grid-column: span 2
+		.prop
+			grid-column: span 6
 
 		.calc_form .btn
 			margin: 0
@@ -3607,6 +3604,7 @@ input[type="select-one"]
 
 		.calc_form .bx_filter_button_box.active
 			grid-column: span 2
+
 
 @media screen and (max-width: 667px)
 

@@ -35,8 +35,14 @@
 		margin: 0
 		border: 0
 
-		a
-			border-bottom: 1px solid #2da9e9 !important
+		&:nth-last-child(4)
+
+			.sub_menu
+				> .menu__link.active.js__link
+					display: none !important
+
+		.menu__link, a
+			border-bottom: 1px solid var(--main-color) !important
 
 
 		&.js__sub-menu-open
