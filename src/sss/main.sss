@@ -322,15 +322,15 @@ footer
 		background-size: contain
 
 .calc_form
-	dd
+	.dd
 		margin: 0
 
 .prop-A
-	dt
+	.dt
 		margin-right: 15px
 
 .prop-A, .prop-P, .big_fall_block .prop, .calc_form dl
-	dt
+	.dt
 		font-weight: bold
 		color: #000
 
@@ -1104,6 +1104,12 @@ input[type="select-one"]
 	align-items: flex-start
 	margin: 0 0 -35px -35px
 
+	.dd
+		width: 100%
+
+	.dt
+		margin-bottom: 15px
+
 	.customSelectCalcLarge .selectIn
 		min-width: auto
 		width: 100%
@@ -1304,9 +1310,9 @@ input[type="select-one"]
 			background: #344AA3
 			border-radius: 50%
 
-.prop
-	display: flex
-	align-items: center
+// .prop
+// 	display: flex
+// 	align-items: center
 
 
 .calc_form 
@@ -3534,6 +3540,10 @@ input[type="select-one"]
 		grid-gap: 30px
 		align-items: end
 
+		.dt
+			margin-bottom: 10px
+
+
 		dd
 			width: 100%
 
@@ -3580,7 +3590,7 @@ input[type="select-one"]
 
 			.slider_wrap
 				width: 100%
-		&-P
+		&-P, &-K
 			grid-column: span 3
 
 
